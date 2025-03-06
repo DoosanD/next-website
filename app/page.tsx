@@ -9,7 +9,6 @@ export default function Home() {
       <a href="/users">USERs</a>
       <Link href="/users">Users_COMP</Link>
       <Link href="/">Home</Link>
-
       <ProductCard />
     </main>
   )

@@ -10,6 +10,7 @@ export default function Home() {
       <Link href="/users">Users_COMP</Link>
       <Link href="/">Home</Link>
       <ProductCard />
+    
     </main>
   )
 }

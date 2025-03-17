@@ -19,6 +19,28 @@ export default async function Home() {
   return (
     <main className="min-h-screen flex flex-col">
 
+      <header className="flex justify-between items-center p-4 bg-black text-white shadow-lg">
+        {/* Logo */}
+        <div className="text-2xl font-bold text-yellow-500">
+          lux<span className="text-white">ride</span>
+        </div>
+
+        {/* Navigation */}
+        <nav className="bg-gray-800 rounded-full px-4 py-2 shadow-md flex gap-6 items-center">
+          <Link href="/" className="text-yellow-500 font-medium hover:text-white transition">Home</Link>
+          <Link href="/services" className="hover:text-yellow-500 transition">Services</Link>
+          <Link href="/prices" className="hover:text-yellow-500 transition">Prices</Link>
+          <Link href="/contact" className="hover:text-yellow-500 transition">Contact</Link>
+          <Link href="/terms" className="hover:text-yellow-500 transition">Terms</Link>
+        </nav>
+
+        {/* Call-to-Action Button */}
+        <Link href="/book" className="bg-yellow-500 text-black px-4 py-2 rounded-full flex items-center gap-2 hover:bg-yellow-600 transition">
+          <span>Book Now</span>
+          <span>📅</span>
+        </Link>
+      </header>
+
       {/* Hero Section */}
       <section className="hero-section p-8 text-center">
         <h1 className="text-4xl font-bold mb-4">{data.data.title}</h1>
